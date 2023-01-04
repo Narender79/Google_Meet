@@ -1,144 +1,131 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Google Meet Frontend Assignment</title>
-        <style>
-            body{
-                height: 230px;
-            }
-            .upper_left
-            {
-                display: grid;
-                text-align: left;
-                grid-template-columns: 1fr 1fr 1fr;
-                width: 100px;
-/*                float: inline-end;*/
-            }
-            big{
-                width: 150px;
-                height: 50px;
-                margin-top: 10px;
-                margin-left: 10px;
-                font-size: 25px;
-            }
-            .upper_left img
-            {
-                width: 35px;
-                margin-right: 0px;
-                margin-top: 10px;
-                margin-left: 10px;
-            }
-            .upper_right
-            {
-                display: flex;
-                float: right;
-                text-align: right;
-                grid-template-columns: 1fr 1fr 1fr;
-                justify-content: center;
-            }
-            .down_left
-            {
-                text-align: down;
-                margin-top: 200px;
-                width: 1000px;
-            }
-           #para
-            {
-                margin-left: 50px;
-                width: 300px;
-            }
-            #pre
-            {
-                margin-bottom: 0px;
-                margin-top: 200px;
-                margin-left: 50px;
-                font-size: 50px;
-            }
-            #free
-            {
-                width: 500px;
-                margin-top: 0px;
-                font-size: 50px;
-                margin-left: 50px;
-            }
-            .upper_right h4
-            {
-                margin-bottom: 0px;
-                margin-top: 0px;
-            }
-            #one
-            {
-                width: 25px;
-                height: 25px;
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-            #two
-            {
-                width: 25px;
-                height: 25px;
-                margin-right: 10px;
-            }
-            #thee
-            {
-                width: 50px;
-                height: 40px;
-                margin-left: 0px;
-            }
-            #blue
-            {
-                color: white;
-                font-style: small-caps;
-                width: 154.828;
-                height: 48;
-                margin-left: 50px;
-                background-color: #1a73e8;
-/*                border-radius: 90px;*/
-                border-width: 1000px;
-                border-top: 1500px;
-            }
-            #code
-            {
-                margin-right: 0px;
-                width: 500px;
-                margin-left: 30px;
-            }
-            .main_img img
-            {
-                position: relative;
-                float: right;
-                margin-top: 0px;
-                top: 30px;
-            }
-            .blue_color
-            {
-                width: 500px;
-                text-align: center;
-                display: flex;
-                margin-right: 30px;
-            }
-        </style>
-    </head>
-    <body>
-    <div class="upper_left">
-        <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-meet-512.png">
-        <big>Google Meet</big>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Google meet front end</title>
+    <style>
+        .container
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+        .item-left
+        {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .item-left img
+        {
+            width: 50px;
+            margin-right: 0px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .item-rigth
+        {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+       
+        .container_2
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+        .text_main
+        {
+            text-align: down;
+            margin-top: 200px;
+            width: 1000px;
+        }
+        #pre
+        {
+            margin-bottom: 0px;
+            margin-top: 200px;
+            margin-left: 50px;
+            font-size: 50px;
+            font-family: "Google Sans Display",Roboto,Arial,sans-serif;
+            font-size: 2.75rem;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: 3.25rem;
+            padding-bottom: 0.5em;
+        }
+        #free
+        {
+            width: 500px;
+            margin-top: 0px;
+            font-size: 50px;
+            margin-left: 50px;
+            font-family: "Google Sans Display",Roboto,Arial,sans-serif;
+            font-size: 2.75rem;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: 3.25rem;
+            padding-bottom: 0.5em;
+        }
+        #para
+        {
+            margin-left: 50px;
+            width: 300px;
+        }
+        .meet
+        {
+            margin-top: 160px;
+            margin-right: 150px;
+        }
+        .meet img
+        {
+            height: 350px;
+        }
+        .container_3
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-left">
+            <img alt="nothing" src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-meet-512.png">
+            <big>Google Meet</big>
+        </div>
+        <div class="item-rigth">
+           <div><h4>09:13 Sun,1 Jan</h4></div>
+            <div><img alt="xyz" id="question" src="https://icon-library.com/images/free-question-mark-icon/free-question-mark-icon-0.jpg" style="width: 25px"></div>
+            <div><img alt="kjdhf" id="comment" src="https://cdn-icons-png.flaticon.com/512/2331/2331041.png" style="width: 25px"></div>
+            <div><img alt="akjdhf" id="setting" src="https://endlessicons.com/wp-content/uploads/2012/11/setting-icon-614x460.png" style="width: 50px"></div>
+        </div>
     </div>
-    <div class="upper_right">
-        <h4>09:13 Sun,1 Jan</h4>
-        <img id="one" src="https://icon-library.com/images/free-question-mark-icon/free-question-mark-icon-0.jpg" style="width: 25px">
-        <img id="two" src="https://cdn-icons-png.flaticon.com/512/2331/2331041.png" style="width: 25px">
-        <img id="thee" src="https://endlessicons.com/wp-content/uploads/2012/11/setting-icon-614x460.png" style="width: 50px">
+    <div class="container_2">
+        <div class="text_main">
+            <p><big id="pre">Premium video meetings.</big></p>
+            <p><big id="free">Now free for everyone</big></p>
+            <p id="para">We re-engineered the service that we built for secure business meetings, Google Meet, to make it free and available for all.</p>
+        </div>
+        <div class="meet">
+            <img alt="xyz" src="https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg">
+        </div>
     </div>
-    <div class="down_left">
-        <p><big id="pre">Premium video meetings.</big></p>
-        <p><big id="free">Now free for everyone</big></p>
-        <p id="para">We re-engineered the service that we built for secure business meetings, Google Meet, to make it free and available for all.</p>
+    <div class="container_3">
+        <div class="new_enter">
+            <div>
+                <p><big id="blue">New Meeting</big></p>
+                <p><big id="code">Enter a code link</big></p>
+            </div>
+            <div>
+                <div><big>Get a link that you can share</big></div>
+                <div>
+                   <p>"Click"</p>
+                    <strong>New meeting</strong>
+                    <p>" to get a link that you can send to people that you want to meet with"</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="blue_color">
-        <p><big id="blue">New Meeting</big></p>
-        <p><big id="code">Enter a code link</big></p>
-    </div>
-    <div class="main_img"><img src="https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg"></div>
-    </body>
+</body>
 </html>
